@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title> Madhusha</title>
+  <link href="assets/img/web/resume.jpg" rel="icon">
+
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Madhusha
+  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
+  * Updated: may 22 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Madhusha </h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul style="font-size: 13px !important; margin-bottom: 0 !important;">
+          <li><a class="k1" href="index.html" style="text-decoration:none; color: black;">Home</a></li>
+          <li><a class="k1" href="#about" style="text-decoration: none; color: black;">About</a></li>
+          <li><a class="k1" href="#resume" style="text-decoration: none; color: black;">Resume</a></li>
+          <li><a class="k1" href="#portfolio" style="text-decoration: none; color: black;">My Photographs</a></li>
+          <li><a class="k1" href="#contact" style="text-decoration: none; color: black;">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" style="font-size: 18px !important;"></i>
+      </nav>
+
+      <script>
+        const navLinks = document.querySelectorAll('.navmenu ul li a');
+
+        const linkColors = {
+          'index.html': '#2a9d8f',   // Home
+          '#about': '#2a9d8f',       // About
+          '#resume': '#2a9d8f',      // Resume
+          '#portfolio': '#2a9d8f',   // Portfolio
+          '#contact': '#2a9d8f'      // Contact
+        };
+
+        function setActiveLink(targetHref) {
+          navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            const color = linkColors[href] || '#ff5733';
+
+            if (href === targetHref) {
+              link.style.color = color;
+              link.style.fontWeight = 'bold';
+              link.style.borderBottom = `2px solid ${color}`;
+            } else {
+              link.style.color = 'black';
+              link.style.fontWeight = 'normal';
+              link.style.borderBottom = 'none';
+            }
+          });
+        }
+
+        // Click event for links
+        navLinks.forEach(link => {
+          link.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+
+            if (href === 'index.html') {
+              e.preventDefault(); // prevent page reload
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              setActiveLink(href);
+            } else {
+              setActiveLink(href);
+            }
+          });
+        });
+
+        // ScrollSpy logic
+        window.addEventListener('scroll', () => {
+          const scrollPos = window.scrollY + 110; // adjust if needed
+          let found = false;
+
+          navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+
+            if (href.startsWith('#')) {
+              const section = document.querySelector(href);
+
+              if (
+                section &&
+                section.offsetTop <= scrollPos &&
+                section.offsetTop + section.offsetHeight > scrollPos
+              ) {
+                setActiveLink(href);
+                found = true;
+              }
+            }
+          });
+
+          // If scroll is at top, set Home active
+          if (!found && scrollPos < 300) {
+            setActiveLink('index.html');
+          }
+        });
+      </script>
+
+
+
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-tiktok"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <img src="assets/img/web/web.jpeg" alt="" data-aos="fade-in">
+
+      <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2>Madhusha Panchanathan</h2>
+            <p>I'm a Photographer
+            </p>
+            <a href="#about" class="btn-get-started">About Me</a>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+  </main>
+
+  <main class="main">
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up" id="about">
+        <h2>About</h2>
+        <p>A web designer is a professional who creates the layout, visual appearance, and usability of a website</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/web/profile.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Graphic Desinger &amp;Photographer.</h2>
+            <p class="fst-italic py-3">
+              "Creative and detail-oriented web designer with a passion for crafting visually stunning and user-friendly
+              websites.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>madhu.lk</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>0763336548</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Hatton ,Sri Lanka</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Diploma in ICT</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>Madhu@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              I'm a creative and detail-oriented Graphic and Web Designer from Hatton, Sri Lanka,
+              with a diploma in design and a passion for building visually appealing, user-friendly websites.
+              I specialize in both graphic design and web development, offering freelance services to
+              bring your ideas to life with precision and creativity
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Skilled in HTML, CSS, and design tools like Adobe Photoshop , illustrar with a focus on responsive design and
+          seamless user experience.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CSS</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>PHP</span> <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+
+
+            <div class="progress">
+              <span class="skill"><span>Photoshop</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>My SQl</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Stats Section -->
+
+
+    <!-- Testimonials Section -->
+    <!-- /Testimonials Section -->
+
+  </main>
+  <main class="main">
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up" id="resume">
+        <h2>Resume</h2>
+        <p>This is my persanal datails</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Profile</h4>
+              <p><em> Graphic Designer and Web Desinger I am an
+                  enthusiastic, self-motivated , reliable ,
+                  responsible and smart work person</em></p>
+
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>G.C.E O/L (2018)</h4>
+              <p><em>Kirkoswald NO @ T.V</em></p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>G.C.E A/L (2021)</h4>
+              <h6>Engineering Technology</h6>
+              <p><em>Norwood Natinaol College</em></p>
+
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Course </h3>
+            <div class="resume-item">
+              <h4>Diploma In ICT</h4>
+              <h5>2023 - Present</h5>
+              <p><em>Sri Lanka German Training Institute , Kilinochchi </em></p>
+              <ul>
+                <li>Learn About Editing Tools Like Adobe Photoshop & Illustrar </li>
+                <li>Developing language HTML , CSS </li>
+
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Diploma In English</h4>
+              <h5>2019 Jan - 2019 Dec</h5>
+              <p><em>Tea Leaf , Maskeliya</em></p>
+              <ul>
+                <li>Develop the English Skills </li>
+                <li>Improve My Self Confidence</li>
+
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+  </main>
+  <main class="main">
+
+    <!-- Portfolio Section -->
+ <!-- Include Isotope CDN in your page -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+<style>
+  .hidden-photo {
+    display: none;
+  }
+
+  .portfolio-item {
+    order: 99;
+  }
+
+  .show-first {
+    order: 1;
+  }
+</style>
+
+<section id="portfolio" class="portfolio section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up" id="portfolio">
+    <h2>My Photographs</h2>
+    <p>I love taking Photographs</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter=".filter-app">My Photographs</li>
+      </ul><!-- End Portfolio Filters -->
+
+      <div class="row gy-4 isotope-container d-flex flex-wrap" data-aos="fade-up" data-aos-delay="200">
+
+        <!-- First 3 photos shown -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app show-first">
+          <img src="assets/img/web/05.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <a href="assets/img/web/05.jpg" title="Photograph" data-gallery="portfolio-gallery-Photograph" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product show-first">
+          <img src="assets/img/web/02.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <a href="assets/img/web/02.jpg" title="Photograph" data-gallery="portfolio-gallery-Photograph" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding show-first">
+          <img src="assets/img/web/03.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <a href="assets/img/web/03.jpg" title="Photograph" data-gallery="portfolio-gallery-Photograph" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Remaining photos hidden -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app hidden-photo">
+          <img src="assets/img/web/01.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <a href="assets/img/web/01.jpg" title="Photograph" data-gallery="portfolio-gallery-Photograph" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product hidden-photo">
+          <img src="assets/img/web/dog.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <a href="assets/img/web/dog.jpg" title="Photograph" data-gallery="portfolio-gallery-Photograph" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding hidden-photo">
+          <img src="assets/img/web/06.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <a href="assets/img/web/06.jpg" title="Photograph" data-gallery="portfolio-gallery-Photograph" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product hidden-photo">
+          <img src="assets/img/web/08.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <a href="assets/img/web/08.jpg" title="Photograph" data-gallery="portfolio-gallery-Photograph" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding hidden-photo">
+          <img src="assets/img/web/09.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <a href="assets/img/web/09.jpg" title="Photograph" data-gallery="portfolio-gallery-Photograph" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product hidden-photo">
+          <img src="assets/img/web/07.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <a href="assets/img/web/07.jpg" title="Photograph" data-gallery="portfolio-gallery-Photograph" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+          </div>
+        </div>
+
+      </div><!-- End Portfolio Container -->
+
+      <!-- View More Button -->
+      <div class="text-center mt-4">
+        <button id="viewMoreBtn" class="btn btn-primary">View More</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  // Initialize Isotope after page loads
+  var iso;
+  window.addEventListener('load', function() {
+    iso = new Isotope('.isotope-container', {
+      itemSelector: '.portfolio-item',
+      layoutMode: 'masonry'
+    });
+  });
+
+  // View More button click handler
+  document.getElementById("viewMoreBtn").addEventListener("click", function () {
+    // Remove hidden-photo class to show all photos
+    document.querySelectorAll(".hidden-photo").forEach(function (item) {
+      item.classList.remove("hidden-photo");
+    });
+
+    // Trigger isotope layout update to reflect new visible items
+    iso.arrange();
+
+    // Hide the View More button
+    this.style.display = "none";
+  });
+</script>
+
+<!-- /Portfolio Section -->
+
+  </main>
+
+  <main class="main">
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up" id="contact">
+        <h2>Contact</h2>
+
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Kirkoswald Upper Division ,Bogawanthalawa , Sri Lanka</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>0763335175</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>madhu@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253708.41834358024!2d80.46513878715302!3d6.890107295948501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae381b2fa3e6f89%3A0x5a3b81a32ae3a6f4!2sHatton!5e0!3m2!1sen!2slk!4v1715501642137!5m2!1sen!2slk"
+                frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Madhusha</strong> All Rights Reserved Design By <span
+            style="font-weight: bold;"> WEBbuilders.lk</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-youtube"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-tiktok"></i></a>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
